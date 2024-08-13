@@ -7,7 +7,7 @@ import { useParams } from "next/navigation";
 import { useState } from "react";
 import Link from "next/link";
 
-const page = () => {
+const Products = () => {
   const params = useParams();
   const productId = parseInt(params.id);
 
@@ -19,7 +19,6 @@ const page = () => {
     <>
       <Header />
       <main className="bg-[#ebe0d7] py-10 px-4 relative">
-        {/* <div id="about" className="w-[80%] h-[1px] absolute top-[-100px]"></div> */}
         <div className=" text-gray-800">
           <Link
             href="/products"
@@ -43,7 +42,7 @@ const page = () => {
   );
 };
 
-export default page;
+export default Products;
 
 const Product = ({ url, title, price, desc, supportingUrl, pages }) => {
   return (
@@ -61,7 +60,7 @@ const Product = ({ url, title, price, desc, supportingUrl, pages }) => {
       <div className="rounded-2xl md:w-[60%]">
         <div className="md:flex flex-1 justify-around gap-1">
           {supportingUrl.map((url, index) => (
-            <div className="w-fit mx-auto">
+            <div key={index} className="w-fit mx-auto">
               <Image
                 key={index}
                 width={300}
