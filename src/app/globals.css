@@ -8,26 +8,252 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+#webpage {
+  scroll-behavior: smooth;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.content-padding {
+  padding: 25px;
+}
+
+.glass-card1,
+.glass-card2 {
+  border-radius: 10px; /* Rounded corners */
+  backdrop-filter: blur(10px); /* Frosted-glass effect */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Light border for separation */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  color: white;
+}
+
+/* Header */
+.navbar-link {
+  position: relative;
+}
+
+ul > .navbar-link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  bottom: 0;
+  transition: all 200ms;
+}
+
+ul > .navbar-link:hover::before,
+.isActive.navbar-link::before {
+  width: 100%;
+}
+
+.navbar {
+  animation: showShadow linear forwards, shrinkMenu linear forwards;
+  animation-timeline: scroll();
+  animation-range-start: 0px;
+  animation-range-end: 100px;
+
+  & ul {
+    animation: changeColorNav linear forwards;
+    animation-timeline: scroll();
+    animation-range-start: 0px;
+    animation-range-end: 100px;
+  }
+
+  & .cta-btn {
+    animation: changeColorNavBtn linear forwards;
+    animation-timeline: scroll();
+    animation-range-start: 0px;
+    animation-range-end: 100px;
+  }
+
+  & .hamburger {
+    animation: changeColorHamburger linear forwards;
+    animation-timeline: scroll();
+    animation-range-start: 0px;
+    animation-range-end: 100px;
+  }
+}
+
+@keyframes showShadow {
+  to {
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@keyframes shrinkMenu {
+  to {
+    padding-block: 0.3rem;
+    background-color: #1f3e65;
+  }
+}
+
+@keyframes changeColorNav {
+  to {
+    color: white;
+  }
+}
+
+@keyframes changeColorHamburger {
+  to {
+    fill: white;
+  }
+}
+
+.hamburger {
+  fill: #1f3e65;
+}
+
+/* Hero */
+
+.hero-bg {
+  background-image: url("../../public/heroBg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+.glass-card1 {
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+}
+
+.arrow-wrapper {
+  margin-top: 20px;
+}
+
+.arrow {
+  font-size: xx-large;
+  display: inline-block;
+  animation: bounce 3s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes hoverAnimation {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes leaveAnimation {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+/* Apply animations */
+.hover-animation {
+  animation: hoverAnimation 0.3s forwards;
+}
+
+.leave-animation {
+  animation: leaveAnimation 0.3s forwards;
+}
+
+/* About */
+.about-img {
+  width: 12.5rem;
+}
+
+.glass-card2 {
+  background: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+}
+
+/* Services */
+.line {
+  position: absolute;
+  width: 3px;
+  height: 0;
+  background: linear-gradient(#f7f7f7, #f7f7f7);
+  right: 0;
+  box-shadow: 0 0 8px #ebe0d7;
+  animation: grow 500ms linear forwards;
+  animation-timeline: view();
+  animation-range-start: 0px;
+  animation-range-end: 50%;
+  opacity: 0;
+}
+
+@keyframes grow {
+  25% {
+    height: 25%;
+    opacity: 0.25;
+  }
+  50% {
+    height: 50%;
+    opacity: 0.5;
+  }
+  75% {
+    height: 75%;
+    opacity: 0.75;
+  }
+  100% {
+    height: 100%;
+    opacity: 1;
+  }
+}
+
+/* Testimonals */
+.testimonial-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.testimonial-item {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+}
+
+.product-item {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in forwards;
+}
+
+.product-item:has(~ .product-item:hover),
+.product-item:hover ~ .product-item {
+  filter: grayscale();
+  scale: 0.9;
 }
