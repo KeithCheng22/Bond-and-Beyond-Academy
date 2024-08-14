@@ -51,10 +51,14 @@ ul > .navbar-link:hover::before,
   width: 100%;
 }
 
-/* .navbar {
+.navbar {
   -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* .navbar {
+  
   animation: showShadow linear forwards, shrinkMenu linear forwards;
   animation-timeline: scroll();
   animation-range-start: 0px;
