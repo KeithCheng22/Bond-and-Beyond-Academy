@@ -10,14 +10,14 @@ const Services = () => {
     <main className="bg-[#ebe0d7] content-padding relative overflow-x-hidden">
       <div id="whyus" className="w-[80%] h-[1px] absolute top-[-200px]"></div>
       <div className="relative text-center text-gray-800 z-10">
-        <div className="relative flex justify-center gap-2 text-gray-700 items-start">
+        <div className="relative flex justify-center gap-2 text-gray-700 items-start mt-10">
           <h2 className="text-3xl font-semibold mb-8 z-10">Why Choose Us</h2>
           <svg
             viewBox="0 0 1150 800"
             width="100%"
             height="500"
             id="svg2"
-            className="absolute inset-0 m-auto z-0"
+            className="absolute inset-0 m-auto z-0 "
           >
             <defs id="defs6" />
             <path
