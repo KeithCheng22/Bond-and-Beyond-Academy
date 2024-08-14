@@ -69,7 +69,7 @@ const Testimonial = ({
 
   useEffect(() => {
     // Set a random delay between 0.5s and 2s
-    const delay = Math.floor(Math.random() * 1500) + 500;
+    const delay = Math.floor(Math.random() * 500) + 300;
 
     const timer = setTimeout(() => {
       if (inView) setFadeInClass("fade-in");
