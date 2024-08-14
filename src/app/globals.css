@@ -41,7 +41,7 @@ ul > .navbar-link::before {
   position: absolute;
   width: 0;
   height: 2px;
-  background-color: white;
+  background-color: #1f3e65;
   bottom: 0;
   transition: all 200ms;
 }
@@ -51,7 +51,7 @@ ul > .navbar-link:hover::before,
   width: 100%;
 }
 
-/* .navbar {
+.navbar {
   animation: showShadow linear forwards, shrinkMenu linear forwards;
   animation-timeline: scroll();
   animation-range-start: 0px;
@@ -77,10 +77,13 @@ ul > .navbar-link:hover::before,
     animation-range-start: 0px;
     animation-range-end: 100px;
   }
-} */
 
-.navbar.scrolled {
-  background-color: red;
+  ul > .navbar-link::before {
+    animation: changeColorUnderline linear forwards;
+    animation-timeline: scroll();
+    animation-range-start: 0px;
+    animation-range-end: 100px;
+  }
 }
 
 @keyframes showShadow {
@@ -107,6 +110,12 @@ ul > .navbar-link:hover::before,
 @keyframes changeColorHamburger {
   to {
     fill: white;
+  }
+}
+
+@keyframes changeColorUnderline {
+  to {
+    background-color: white;
   }
 }
 
