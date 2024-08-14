@@ -113,12 +113,12 @@ const About = () => {
             </div>
             <p className="text-gray-800 text-balance">
               Our approach begins with{" "}
-              <b className="text-[#e4a58a]"> Concept Mastery</b>, ensuring you
+              <b className="text-[#b75328]"> Concept Mastery</b>, ensuring you
               thoroughly understand core principles. Next,{" "}
-              <b className="text-[#49d7b3]">Application Practice</b> helps
+              <b className="text-[#2e836e]">Application Practice</b> helps
               reinforce this knowledge through targeted questions, bridging the
               gap between theory and practice. Finally,{" "}
-              <b className="text-[#8181d4]">Exam Simulation</b> prepares you for
+              <b className="text-[#5050d3]">Exam Simulation</b> prepares you for
               real test conditions, enhancing your time management and exam
               strategies. This structured method has helped all our students to
               master concepts, apply them effectively, and excel in exams.

@@ -24,8 +24,9 @@ const Products = () => {
               channel, please follow us on Instgram{" "}
               <Link
                 href="https://www.instagram.com/bondbeyond_academy/"
-                className="text-[#1F3E65]"
+                className="text-[#1F3E65] underline underline-offset-2"
                 target="_blank"
+                aria-label="Instagram"
               >
                 @bondbeyond_academy
               </Link>{" "}
@@ -35,9 +36,13 @@ const Products = () => {
             <p className="text-gray-800 text-balance mt-2">
               Alterntively, if you would like to purchase a hard copy of our
               products, please contact us at{" "}
-              <a href="tel:98535245" className="text-[#1F3E65]">
+              <Link
+                href="tel:98535245"
+                className="text-[#1F3E65] underline underline-offset-2"
+                aria-label="Contact number"
+              >
                 +65 9853 5245
-              </a>
+              </Link>
               .
             </p>
 

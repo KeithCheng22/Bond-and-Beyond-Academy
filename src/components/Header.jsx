@@ -14,10 +14,6 @@ const Header = () => {
   const mobileRef = useRef("");
 
   useEffect(() => {
-    const handleResize = () => {
-      console.log(window.innerWidth);
-    };
-
     const getMousePosition = (e) => {
       if (!mobileRef.current?.offsetWidth) return;
       if (e.offsetX >= mobileRef.current.offsetWidth) {
@@ -25,7 +21,6 @@ const Header = () => {
       }
     };
 
-    window.addEventListener("resize", handleResize);
     window.addEventListener("click", getMousePosition);
 
     // Close menu on resize
@@ -34,7 +29,6 @@ const Header = () => {
     }
 
     return () => {
-      window.removeEventListener("resize", handleResize);
       window.removeEventListener("click", getMousePosition);
     };
   }, [windowWidth, showMenu]);

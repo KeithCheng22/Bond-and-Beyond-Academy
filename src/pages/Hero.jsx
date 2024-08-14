@@ -37,13 +37,16 @@ const Hero = () => {
 
           <div className="relative w-fit mx-auto overflow-hidden">
             <button
+              type="button"
               id="cta-button"
-              className="relative border-2 border-white px-8 py-2 text-sm font-bold uppercase bg-transparent text-white peer z-10 hover:text-gray-600 duration-300"
+              className="relative border-2 border-white px-8 py-4  font-bold uppercase bg-transparent text-white peer z-10 hover:text-gray-600 duration-300"
               onMouseEnter={() => setIsHover(true)}
               onMouseLeave={() => setIsHover(false)}
               aria-label="Sign Up Today"
             >
-              <a href="#contact">Sign Up Today</a>
+              <a href="#contact" className="text-2xl px-8 py-4">
+                Sign Up Today
+              </a>
             </button>
             <div
               id="cta-bg"

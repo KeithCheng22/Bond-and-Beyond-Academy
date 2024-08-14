@@ -28,6 +28,7 @@ const Footer = () => {
             <Link
               href="https://www.facebook.com/profile.php?id=61561596419202&mibextid=LQQJ4d"
               target="_blank"
+              aria-label="Facebook"
             >
               <FaFacebook
                 size={30}
@@ -37,6 +38,7 @@ const Footer = () => {
             <Link
               href="https://www.instagram.com/bondbeyond_academy/"
               target="_blank"
+              aria-label="Instagram"
             >
               <FaInstagram
                 size={30}
@@ -50,18 +52,17 @@ const Footer = () => {
               <FaTiktok
                 size={28}
                 className="hover:text-purple-900 duration-150"
+                aria-label="Tiktok"
               />
             </Link>
           </div>
           <ul className="flex gap-6 mt-8 text-gray-800 items-end text-sm flex-wrap justify-center md:text-lg">
             {navbarHeaders.map((header, index) => (
-              <a
-                href={header.href}
-                key={index}
-                className="hover:text-[#1F3E65]"
-              >
-                {header.header}
-              </a>
+              <li key={index}>
+                <a href={header.href} className="hover:text-[#1F3E65]">
+                  {header.header}
+                </a>
+              </li>
             ))}
           </ul>
         </div>
