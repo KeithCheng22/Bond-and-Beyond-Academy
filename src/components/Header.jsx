@@ -55,18 +55,19 @@ const Header = () => {
       </Link>
       <ul className="flex gap-8 text-[#1F3E65] max-md:hidden text-xl items-end">
         {navbarHeaders.map((header, index) => (
-          <Link
-            href={header.href}
-            key={index}
-            className={`${
-              isActive === header.href
-                ? "lg:text-3xl text-xl"
-                : "lg:text-2xl text-lg"
-            } navbar-link`}
-            onClick={() => handleClick(`${header.href}`)}
-          >
-            {header.header}
-          </Link>
+          <li key={index} aria-label={header.header}>
+            <Link
+              href={header.href}
+              className={`${
+                isActive === header.href
+                  ? "lg:text-3xl text-xl"
+                  : "lg:text-2xl text-lg"
+              } navbar-link`}
+              onClick={() => handleClick(`${header.href}`)}
+            >
+              {header.header}
+            </Link>
+          </li>
         ))}
       </ul>
 
@@ -97,18 +98,19 @@ const Header = () => {
       >
         <ul className="flex flex-col items-center space-y-6 text-lg text-[#4f5b69]">
           {navbarHeaders.map((header, index) => (
-            <Link
-              href={header.href}
-              key={index}
-              className={`${
-                isActive === header.href
-                  ? "isActive text-[#1f3e65] font-semibold"
-                  : ""
-              } navbar-link`}
-              onClick={() => handleClick(`${header.href}`)}
-            >
-              {header.header}
-            </Link>
+            <li key={index} aria-label={header.header}>
+              <Link
+                href={header.href}
+                className={`${
+                  isActive === header.href
+                    ? "isActive text-[#1f3e65] font-semibold"
+                    : ""
+                } navbar-link`}
+                onClick={() => handleClick(`${header.href}`)}
+              >
+                {header.header}
+              </Link>
+            </li>
           ))}
         </ul>
       </div>

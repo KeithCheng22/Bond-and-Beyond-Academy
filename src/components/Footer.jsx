@@ -59,9 +59,9 @@ const Footer = () => {
           <ul className="flex gap-6 mt-8 text-gray-800 items-end text-sm flex-wrap justify-center md:text-lg">
             {navbarHeaders.map((header, index) => (
               <li key={index}>
-                <a href={header.href} className="hover:text-[#1F3E65]">
+                <Link href={header.href} className="hover:text-[#1F3E65]">
                   {header.header}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
