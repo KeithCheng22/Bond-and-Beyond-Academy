@@ -1,4 +1,5 @@
 import { Amaranth } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
 const amaranth = Amaranth({ subsets: ["latin"], weight: "400" });
@@ -12,7 +13,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="bg-gray-50">
-      <body className={amaranth.className}>{children}</body>
+      <body className={amaranth.className}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
