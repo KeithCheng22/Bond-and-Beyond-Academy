@@ -146,7 +146,7 @@ export const testimonials = [
     year: 2024,
     grade_jump: "C5 to A1",
     testimonial:
-      "An exceptional learning experience. The innovative teaching methods made complex concepts easy to understand.",
+      "Love the tutors, and the guidance was remarkable. Highly recomended!",
   },
 ];
 

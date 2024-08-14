@@ -51,7 +51,7 @@ ul > .navbar-link:hover::before,
   width: 100%;
 }
 
-.navbar {
+/* .navbar {
   animation: showShadow linear forwards, shrinkMenu linear forwards;
   animation-timeline: scroll();
   animation-range-start: 0px;
@@ -77,6 +77,10 @@ ul > .navbar-link:hover::before,
     animation-range-start: 0px;
     animation-range-end: 100px;
   }
+} */
+
+.navbar.scrolled {
+  background-color: red;
 }
 
 @keyframes showShadow {

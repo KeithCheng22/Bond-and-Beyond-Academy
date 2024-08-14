@@ -8,7 +8,7 @@ const amaranth = Amaranth({ subsets: ["latin"], weight: "400" });
 export const metadata = {
   title: "Bond and Beyond Academy",
   description:
-    "Bond and Beyond Academy (The Chemistry Specialist) is the premier choice for specialised O/IB/IP Chemistry Tuition. With over 5 years of experience, 80% distinction rates and 100% pass rates, we are confident that under the guidance of our expert tutors, you will be next to clinch that coveted A! 🇸🇬",
+    "The premier choice for O/IB/IP Chemistry tuition in Singapore 🇸🇬. With 5+ years of expertise, 80% distinction rates, and a 100% pass rate.",
 };
 
 export default function RootLayout({ children }) {

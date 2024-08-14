@@ -11,12 +11,13 @@ const Header = () => {
   const [isActive, setIsActive] = useState("#hero");
   const [showMenu, setShowMenu] = useState(false);
   const [windowWidth, setWindowWidth] = useState(0);
+  const [windowScroll, setWindowScroll] = useState(0);
 
   const mobileRef = useRef("");
 
   useEffect(() => {
     const handleResize = () => {
-      setWindowWidth(window.innerWidth);
+      console.log(window.innerWidth);
     };
 
     const getMousePosition = (e) => {
@@ -25,6 +26,17 @@ const Header = () => {
         setShowMenu(false);
       }
     };
+
+    const handleScroll = () => {
+      const navbar = document.querySelector(".navbar");
+      if (window.scrollY > 100) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
 
     window.addEventListener("resize", handleResize);
     window.addEventListener("click", getMousePosition);
@@ -37,15 +49,17 @@ const Header = () => {
     return () => {
       window.removeEventListener("resize", handleResize);
       window.removeEventListener("click", getMousePosition);
+      window.removeEventListener("scroll", handleScroll);
     };
-  }, [windowWidth, showMenu]);
+  }, [windowWidth, showMenu, windowScroll]);
 
   const handleClick = (href) => {
     setIsActive(href);
     setShowMenu(false);
   };
 
-  const { ref } = useInView({
+  // To allow animation of the navbar
+  const { ref, inView } = useInView({
     threshold: 0,
   });
 
@@ -56,7 +70,7 @@ const Header = () => {
   return (
     <nav
       ref={ref}
-      className="navbar flex items-center px-6 py-6 justify-between sticky top-0 bg-gay-50 z-20"
+      className="navbar flex items-center px-6 py-6 justify-between sticky top-0 bg-gray-50 z-20"
     >
       <Link href="/#hero">
         <Image
@@ -102,7 +116,7 @@ const Header = () => {
       {/* Mobile */}
       <div
         ref={mobileRef}
-        className={`fixed inset-0 border-r-2 shadow-2xl bg-white text-white flex flex-col items-center justify-center transition-all duration-500 w-[80%] ${
+        className={`fixed inset-0 border-r-2 shadow-2xl bg-white flex flex-col items-center justify-center transition-all duration-500 w-[80%] ${
           showMenu
             ? "opacity-100 visible translate-x-0"
             : "opacity-0 invisible translate-x-[-20em]"
