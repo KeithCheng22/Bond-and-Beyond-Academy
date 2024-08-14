@@ -30,6 +30,7 @@ const BackToTop = () => {
       onClick={scrollToTop}
       className={`back-to-top ${showButton ? "show" : ""}`}
       aria-label="Back to Top"
+      aria-live="polite"
     >
       &uarr;
     </button>

@@ -171,10 +171,7 @@ ul > .navbar-link:hover::before,
 /* Hero */
 
 .hero-bg {
-  background-image: url("../../public/heroBg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-blend-mode: darken;
+  mix-blend-mode: darken;
 }
 
 .glass-card1 {

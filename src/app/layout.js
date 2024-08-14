@@ -1,7 +1,5 @@
 import { Amaranth } from "next/font/google";
 import "./globals.css";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
 
 const amaranth = Amaranth({ subsets: ["latin"], weight: "400" });
 

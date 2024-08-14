@@ -13,7 +13,7 @@ const Services = () => {
     3: <SlChemistry size={30} className="inline" />,
   };
 
-  const { ref, inView, entry } = useInView({
+  const { ref, inView } = useInView({
     threshold: 0.5,
     triggerOnce: true,
   });

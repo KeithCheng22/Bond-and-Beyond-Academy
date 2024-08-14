@@ -27,7 +27,7 @@ const About = () => {
             <div className="max-md:mb-10 w-1/2 mx-auto px-1">
               <Image
                 src={about}
-                alt="Keith Cheng"
+                alt="Potrait of Keith Cheng"
                 className="rounded-lg shadow-lg mx-auto"
                 priority
               />

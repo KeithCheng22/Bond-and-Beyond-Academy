@@ -91,7 +91,12 @@ const Testimonial = ({
         <p className="text-lg ">
           {client} ({school}), {subject}
         </p>
-        <Image src={stars} width={150} className="mx-auto" alt="Rating" />
+        <Image
+          src={stars}
+          width={150}
+          className="mx-auto"
+          alt="5 star rating"
+        />
         <p className="mb-5 italic">&ldquo;{testimonial}&rdquo;</p>
 
         {school !== "Parent" && (

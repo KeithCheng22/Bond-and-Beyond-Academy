@@ -72,6 +72,7 @@ function Service({ url, title, subtitle, layout, why_us }) {
                 : "translate-x-[-200px] opacity-0"
             } max-md:order-1 transition-all duration-500 max-md:mx-auto rounded-lg`}
             alt={why_us}
+            priority
           />
           <div
             className={`${
@@ -113,6 +114,7 @@ function Service({ url, title, subtitle, layout, why_us }) {
                 : "translate-x-[-200px] opacity-0"
             } max-md:order-1 transition-all duration-500 ml-auto max-md:mx-auto rounded-lg`}
             alt={why_us}
+            priority
           />
         </>
       )}

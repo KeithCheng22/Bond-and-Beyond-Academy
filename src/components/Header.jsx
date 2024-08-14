@@ -56,6 +56,7 @@ const Header = () => {
           alt="Bond and Beyond Academy Logo"
           className="cursor-pointer max-md:w-[50px]"
           width={80}
+          priority
         />
       </Link>
       <ul className="flex gap-8 text-[#1F3E65] max-md:hidden text-xl items-end">

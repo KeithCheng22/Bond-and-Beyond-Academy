@@ -2,19 +2,28 @@
 import { useState } from "react";
 import Image from "next/image";
 import hero from "../../public/hero.png";
+import heroBg from "../../public/heroBg.jpg";
 import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
 
 const Hero = () => {
   const [isHover, setIsHover] = useState(false);
 
   return (
-    <main className="bg-[#777777]/60 content-padding hero-bg relative">
+    <main className="bg-[#777777]/60 content-padding relative">
+      <Image
+        src={heroBg}
+        alt="Hero background"
+        className="w-full hero-bg object-cover"
+        priority
+        layout="fill"
+      />
       <div id="hero" className="w-[80%] h-[1px] absolute top-[-9999px]"></div>
       <div className="glass-card1">
         <Image
           src={hero}
           className="md:px-5 py-10"
           alt="Bond and Beyond Academy Logo"
+          priority
         />
         <div className="text-center md:py-10 px-1">
           <h1 className="text-xl text-pretty uppercase font-bold mb-3 md:text-2xl tracking-wide ">
