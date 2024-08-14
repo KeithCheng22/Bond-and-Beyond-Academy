@@ -7,7 +7,7 @@ import { useInView } from "react-intersection-observer";
 
 const Services = () => {
   return (
-    <main className="bg-[#ebe0d7] content-padding relative">
+    <main className="bg-[#ebe0d7] content-padding relative overflow-x-hidden">
       <div id="whyus" className="w-[80%] h-[1px] absolute top-[-200px]"></div>
       <div className="relative text-center text-gray-800 z-10">
         <div className="relative flex justify-center gap-2 text-gray-700 items-start">

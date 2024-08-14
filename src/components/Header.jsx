@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import { useInView } from "react-intersection-observer";
 import { navbarHeaders } from "@/data";
 import Image from "next/image";
 import logo from "../../public/logo.png";
@@ -11,7 +10,6 @@ const Header = () => {
   const [isActive, setIsActive] = useState("#hero");
   const [showMenu, setShowMenu] = useState(false);
   const [windowWidth, setWindowWidth] = useState(0);
-  const [windowScroll, setWindowScroll] = useState(0);
 
   const mobileRef = useRef("");
 
@@ -27,17 +25,6 @@ const Header = () => {
       }
     };
 
-    const handleScroll = () => {
-      const navbar = document.querySelector(".navbar");
-      if (window.scrollY > 100) {
-        navbar.classList.add("scrolled");
-      } else {
-        navbar.classList.remove("scrolled");
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
     window.addEventListener("resize", handleResize);
     window.addEventListener("click", getMousePosition);
 
@@ -49,29 +36,20 @@ const Header = () => {
     return () => {
       window.removeEventListener("resize", handleResize);
       window.removeEventListener("click", getMousePosition);
-      window.removeEventListener("scroll", handleScroll);
     };
-  }, [windowWidth, showMenu, windowScroll]);
+  }, [windowWidth, showMenu]);
 
   const handleClick = (href) => {
     setIsActive(href);
     setShowMenu(false);
   };
 
-  // To allow animation of the navbar
-  const { ref, inView } = useInView({
-    threshold: 0,
-  });
-
   const handleShowMenu = () => {
     setShowMenu((prev) => !prev);
   };
 
   return (
-    <nav
-      ref={ref}
-      className="navbar flex items-center px-6 py-6 justify-between sticky top-0 bg-gray-50 z-20"
-    >
+    <nav className="navbar flex items-center px-6 py-6 justify-between sticky top-0 bg-gray-50 z-20">
       <Link href="/#hero">
         <Image
           src={logo}

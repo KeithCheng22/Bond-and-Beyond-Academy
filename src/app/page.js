@@ -8,14 +8,13 @@ import Services from "@/pages/Services";
 import WhyUs from "@/pages/WhyUs";
 import Testimonials from "@/pages/Testimonials";
 import Contact from "@/pages/Contact";
+import BackToTop from "@/components/BackToTop";
 
 export default function Home() {
   return (
-    <main
-      id="webpage"
-      className="bg-gray-50 h-dvh max-w-[1600px] mx-auto overflow-x-hidden"
-    >
+    <main id="webpage" className="bg-gray-50 h-dvh max-w-[1600px] mx-auto">
       <div className="">
+        <BackToTop />
         <Header />
         <Hero />
         <About />

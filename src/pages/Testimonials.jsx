@@ -68,7 +68,7 @@ const Testimonial = ({
   const [fadeInClass, setFadeInClass] = useState("");
 
   useEffect(() => {
-    // Set a random delay between 0.5s and 2s
+    // Set a random delay between 0.3s and 0.8s
     const delay = Math.floor(Math.random() * 500) + 300;
 
     const timer = setTimeout(() => {
