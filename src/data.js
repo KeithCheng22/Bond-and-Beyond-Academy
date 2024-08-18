@@ -98,16 +98,16 @@ export const testimonials = [
     client: "Kyler",
     subject: "GCE O Level Pure Chemistry",
     school: "SGSS", // or Parent
-    year: 2024,
+    year: 2023,
     grade_jump: "F9 to A1",
     testimonial:
       "Highly recommend! The 24/7 support and custom lesson plans helped me stay on track and excel in my exams.",
   },
   {
-    client: "Keith",
+    client: "Sandy",
     subject: "GCE O Level Combined Chemistry",
     school: "WGSS", // or Parent
-    year: 2024,
+    year: 2023,
     grade_jump: "D7 to A2",
     testimonial:
       "Fantastic tutors and a comprehensive approach. I felt well-prepared and confident going into my exams.",
@@ -115,8 +115,8 @@ export const testimonials = [
   {
     client: "Kaizer",
     subject: "GCE O Level Pure Chemistry",
-    school: "NYGH", // or Parent
-    year: 2024,
+    school: "ZHSS", // or Parent
+    year: 2023,
     grade_jump: "C5 to A1",
     testimonial:
       "An exceptional learning experience. The innovative teaching methods made complex concepts easy to understand.",
@@ -125,19 +125,19 @@ export const testimonials = [
     client: "Cindy Yap",
     subject: "GCE O Level Pure Chemistry",
     school: "Parent", // or Parent
-    year: 2024,
+    year: 2022,
     grade_jump: "C5 to A1",
     testimonial:
-      "Managed to pull my son's grade to an A1 in just 3 months! I am really grateful for the support given by the academy! Will highly recoomend!",
+      "Managed to pull my son's grade to an A1 in just 3 months! I am really grateful for the support given by the academy! Will highly recommend!",
   },
   {
-    client: "Johnson",
+    client: "Johnson Yeo",
     subject: "GCE O Level Pure Chemistry",
     school: "Parent", // or Parent
-    year: 2024,
+    year: 2022,
     grade_jump: "C5 to A1",
     testimonial:
-      "A great and reliable center. Patient and dedicated tutors, my child enjoyed Mr Keith's lessons tremendously!",
+      "A great and reliable company. Patient and dedicated tutors, my child enjoyed Mr Keith's lessons tremendously!",
   },
   {
     client: "Kaizer",

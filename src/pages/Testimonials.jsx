@@ -84,9 +84,9 @@ const Testimonial = ({
       className={`relative testimonial-item bg-[#ebe0d7] rounded-lg mb-10 w-full opacity-0 ${fadeInClass}
       `}
     >
-      <div className="absolute top-[-15%] w-fit right-0 left-0 mx-auto border-2 rounded-full border-gray-600">
+      {/* <div className="absolute top-[-15%] w-fit right-0 left-0 mx-auto border-2 rounded-full border-gray-600">
         <Image src={about} width={80} className="rounded-full" alt={client} />
-      </div>
+      </div> */}
       <div className="pt-[15%] px-2">
         <p className="text-lg ">
           {client} ({school}), {subject}
