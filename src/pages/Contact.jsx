@@ -12,8 +12,8 @@ const Contact = () => {
         id="contact"
         className="w-[80%] h-[1px] absolute top-[-150px] z-0"
       ></div>
-      <div className="absolute w-[10px] h-[500px] bg-gray-50 rotate-45 top-[-80px]"></div>
-      <div className="absolute w-[10px] h-[500px] bg-gray-50 -rotate-45 top-[-80px]"></div>
+      <div className="absolute w-[10px]  h-[600px] rotate-[25deg] md:h-[500px] bg-gray-50 md:rotate-45 top-[-80px]"></div>
+      <div className="absolute w-[10px] h-[600px] bg-gray-50 -rotate-[25deg] md:-rotate-[45deg] md:h-[500px] top-[-80px]"></div>
       <div className="relative text-center text-gray-800 z-10">
         <div className="max-sm:mb-6 mb-12">
           <h2 className="text-3xl font-semibold text-gray-700 z-10">
