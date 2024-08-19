@@ -1,8 +1,11 @@
+"use client";
+import { useState } from "react";
 import Link from "next/link";
 import { FaRocket } from "react-icons/fa6";
 import { MdOutlineMailOutline, MdOutlinePhone } from "react-icons/md";
 
 const Contact = () => {
+  const [isHover, setIsHover] = useState(false);
   return (
     <main className="bg-[#ebe0d7] py-10 px-4 relative overflow-hidden">
       <div
@@ -33,6 +36,25 @@ const Contact = () => {
               <MdOutlinePhone size={30} />
               <Link href="tel:98535245">+65 9853 5245</Link>
             </div>
+          </div>
+          <div className="relative w-fit mx-auto overflow-hidden mt-10">
+            <a
+              id="cta-button"
+              href="/products"
+              className="text-xl block w-fit relative border-2 border-gray-600 px-8 py-4 font-bold uppercase bg-transparent text-grey-600 peer z-10 hover:text-white duration-300"
+              onMouseEnter={() => setIsHover(true)}
+              onMouseLeave={() => setIsHover(false)}
+              aria-label="Check out our products!"
+            >
+              Check out our products!
+            </a>
+
+            <div
+              id="cta-bg"
+              className={`bg-gray-600 absolute inset-0 transition-transform duration-300 ${
+                isHover ? "hover-animation" : "leave-animation"
+              }`}
+            ></div>
           </div>
         </section>
       </div>

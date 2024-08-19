@@ -9,7 +9,7 @@ const Hero = () => {
   const [isHover, setIsHover] = useState(false);
 
   return (
-    <main className="bg-[#777777]/60 content-padding relative">
+    <main className="bg-[#777777]/80 content-padding relative">
       <Image
         src={heroBg}
         alt="Hero background"
