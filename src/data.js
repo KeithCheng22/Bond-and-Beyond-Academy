@@ -114,7 +114,7 @@ export const testimonials = [
   },
   {
     client: "Kaizer",
-    subject: "GCE O Level Pure Chemistry",
+    subject: "GCE O Level Combined Chemistry",
     school: "ZHSS", // or Parent
     year: 2023,
     grade_jump: "C5 to A1",
@@ -132,21 +132,39 @@ export const testimonials = [
   },
   {
     client: "Johnson Yeo",
-    subject: "GCE O Level Pure Chemistry",
+    subject: "GCE O Level Combined Chemistry",
     school: "Parent", // or Parent
     year: 2022,
     grade_jump: "C5 to A1",
     testimonial:
-      "A great and reliable company. Patient and dedicated tutors, my child enjoyed Mr Keith's lessons tremendously!",
+      "A great and reliable company, provided quality services and flexibility. Patient and dedicated tutors, my child enjoyed Mr Keith's lessons tremendously!",
   },
   {
-    client: "Kaizer",
+    client: "Xavier",
     subject: "GCE O Level Pure Chemistry",
-    school: "SGSS", // or Parent
-    year: 2024,
-    grade_jump: "C5 to A1",
+    school: "HIHS", // or Parent
+    year: 2022,
+    grade_jump: "F9 to A2",
     testimonial:
-      "Love the tutors, and the guidance was remarkable. Highly recomended!",
+      "Love the tutors, and the guidance was remarkable. Highly reccomended!",
+  },
+  {
+    client: "Celest Goh",
+    subject: "GCE O Level Pure Chemistry",
+    school: "NYGH", // or Parent
+    year: 2021,
+    grade_jump: "D7 to A1",
+    testimonial:
+      "The step-by-step approach helped me to solidify my chemistry knowledge. I am really grateful for the support given by the academy. Will highly recommend!",
+  },
+  {
+    client: "Micheal",
+    subject: "GCE O Level Pure Chemistry",
+    school: "RI", // or Parent
+    year: 2023,
+    grade_jump: "E8 to A1",
+    testimonial:
+      "Lessons were fun and engaging. I feel like I could undestand so much better, and I started to love chemistry. Highly recommended!",
   },
 ];
 
