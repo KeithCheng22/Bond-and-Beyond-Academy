@@ -26,7 +26,7 @@ export default function Home() {
           ></path>
         </svg>
         <Services />
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
           <path
             fill="#ebe0d7"
             fillOpacity="1"
@@ -34,7 +34,7 @@ export default function Home() {
           ></path>
         </svg>
         <WhyUs />
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 100 1440 320">
           <path
             fill="#ebe0d7"
             fillOpacity="1"

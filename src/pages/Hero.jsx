@@ -55,11 +55,15 @@ const Hero = () => {
             ></div>
           </div>
 
-          <div className="arrow-wrapper">
+          <a
+            className="arrow-wrapper block"
+            href="#about"
+            aria-label="Scroll down"
+          >
             <div className="arrow">
-              <MdOutlineKeyboardDoubleArrowDown />
+              <MdOutlineKeyboardDoubleArrowDown size={50} />
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </main>

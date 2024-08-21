@@ -122,6 +122,15 @@ export const testimonials = [
       "An exceptional learning experience. The innovative teaching methods made complex concepts easy to understand.",
   },
   {
+    client: "Micheal",
+    subject: "GCE O Level Pure Chemistry",
+    school: "RI", // or Parent
+    year: 2023,
+    grade_jump: "E8 to A1",
+    testimonial:
+      "Lessons were fun and engaging. I feel like I could undestand so much better, and I started to love chemistry. Highly recommended!",
+  },
+  {
     client: "Cindy Yap",
     subject: "GCE O Level Pure Chemistry",
     school: "Parent", // or Parent
@@ -156,15 +165,6 @@ export const testimonials = [
     grade_jump: "D7 to A1",
     testimonial:
       "The step-by-step approach helped me to solidify my chemistry knowledge. I am really grateful for the support given by the academy. Will highly recommend!",
-  },
-  {
-    client: "Micheal",
-    subject: "GCE O Level Pure Chemistry",
-    school: "RI", // or Parent
-    year: 2023,
-    grade_jump: "E8 to A1",
-    testimonial:
-      "Lessons were fun and engaging. I feel like I could undestand so much better, and I started to love chemistry. Highly recommended!",
   },
 ];
 

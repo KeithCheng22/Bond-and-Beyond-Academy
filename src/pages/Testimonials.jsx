@@ -10,7 +10,7 @@ import { useInView } from "react-intersection-observer";
 
 const Testimonials = () => {
   return (
-    <main className="bg-gray-50 py-10 px-4 relative">
+    <main className="bg-gray-50 pb-10 px-4 relative">
       <div
         id="testimonials"
         className="w-[80%] h-[1px] absolute top-[-150px]"

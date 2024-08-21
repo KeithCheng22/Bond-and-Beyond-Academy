@@ -44,9 +44,8 @@ const Services = () => {
           <FaHandHoldingHeart size={38} className="z-10" />
         </div>
         <h3 className="text-xl font-medium text-gray-700 mb-12">
-          We provide Physical, Online, and Group Tuition with{" "}
-          <b className="border-2 rounded-full p-1 border-gray-800">no</b>{" "}
-          Registration Fee
+          We are registered with MOE, providing Physical, Online, and Group
+          Tuition with <b className="underline">no</b> registration fee
         </h3>
         <div className="grid md:grid-cols-3 gap-8">
           {services_data.map((service, index) => (

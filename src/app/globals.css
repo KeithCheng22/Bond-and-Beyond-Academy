@@ -95,6 +95,19 @@ ul > .navbar-link:hover::before,
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
+.menu-btn {
+  transition: transform 0.3s ease;
+}
+.menu-btn.active .bar1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.menu-btn.active .bar2 {
+  opacity: 0;
+}
+.menu-btn.active .bar3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
 /* .navbar {
   
   animation: showShadow linear forwards, shrinkMenu linear forwards;
@@ -163,10 +176,6 @@ ul > .navbar-link:hover::before,
     background-color: white;
   }
 } */
-
-.hamburger {
-  fill: #1f3e65;
-}
 
 /* Hero */
 

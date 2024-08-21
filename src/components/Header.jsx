@@ -21,15 +21,21 @@ const Header = () => {
       }
     };
 
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
     window.addEventListener("click", getMousePosition);
+    window.addEventListener("resize", handleResize);
 
     // Close menu on resize
-    if (windowWidth >= 990) {
+    if (windowWidth >= 768) {
       setShowMenu(false);
     }
 
     return () => {
       window.removeEventListener("click", getMousePosition);
+      window.removeEventListener("resize", handleResize);
     };
   }, [windowWidth, showMenu]);
 
@@ -72,19 +78,15 @@ const Header = () => {
       </ul>
 
       <div
-        className="md:hidden cursor-pointer hamburger"
+        id="menu-btn"
+        className={`md:hidden menu-btn flex flex-col items-center justify-center cursor-pointer w-8 h-8 ${
+          showMenu ? "active" : ""
+        }`}
         onClick={handleShowMenu}
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          x="0px"
-          y="0px"
-          width="50"
-          height="25"
-          viewBox="0 0 50 50"
-        >
-          <path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"></path>
-        </svg>
+        <div className="bar1 w-6 h-1 bg-[#1F3E65] mb-1"></div>
+        <div className="bar2 w-6 h-1 bg-[#1F3E65] mb-1"></div>
+        <div className="bar3 w-6 h-1 bg-[#1F3E65]"></div>
       </div>
 
       {/* Mobile */}
