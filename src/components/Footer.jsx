@@ -19,6 +19,10 @@ const Footer = () => {
           />
           <h3>Bond and Beyond Academy</h3>
           <p>UEN: 53489720K</p>
+          <div className="flex gap-2 justify-center items-center">
+            <div className="w-[10px] h-[10px] bg-green-600 rounded-full"></div>
+            <p className="text-sm">Operating Hours: 24 hours</p>
+          </div>
         </div>
         <div>
           <p className="max-md:hidden text-center text-gray-800">

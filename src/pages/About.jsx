@@ -33,11 +33,12 @@ const About = () => {
               />
             </div>
             <p className="text-lg leading-relaxed text-gray-700 text-pretty w-3/4 mx-auto px-5 max-sm:text-md">
-              <b>Bond and Beyond Academy</b> was founded in June 2024 by Keith
-              Cheng, a dedicated educator with over five years of experience in
-              private tuition. Driven by a passion for chemistry and a
-              commitment to educational excellence, Keith established Bond and
-              Beyond Academy to address the growing need for{" "}
+              <b>Bond and Beyond Academy</b> is a chemistry tuition centre
+              founded in June 2024 by Keith Cheng, a dedicated educator with
+              over five years of experience in private tuition. Driven by a
+              passion for chemistry and a commitment to educational excellence,
+              Keith established Bond and Beyond Academy to address the growing
+              need for{" "}
               <b className="text-[#1F3E65]">
                 high-quality, personalised chemistry education.
               </b>{" "}
@@ -77,9 +78,9 @@ const About = () => {
                 <FaRegLightbulb size={25} />
               </div>
               <p className="text-gray-800  text-balance">
-                To be the top choice for chemistry tuition in Singapore,
-                inspiring and equipping students to excel and thrive in their
-                scientific pursuits.
+                To be the top choice for O-Level pure and combined chemistry
+                tuition in Singapore, inspiring and equipping students to excel
+                and thrive in their scientific pursuits.
               </p>
             </div>
           </div>

@@ -61,14 +61,15 @@ const Header = () => {
       </Link>
       <ul className="flex gap-8 text-[#1F3E65] max-md:hidden text-xl items-end">
         {navbarHeaders.map((header, index) => (
-          <li key={index} aria-label={header.header}>
+          <li
+            key={index}
+            aria-label={header.header}
+            className={`${
+              isActive === header.href ? "isActive" : ""
+            } navbar-link lg:text-2xl text-lg`}
+          >
             <Link
               href={header.href}
-              className={`${
-                isActive === header.href
-                  ? "lg:text-3xl text-xl"
-                  : "lg:text-2xl text-lg"
-              } navbar-link`}
               onClick={() => handleClick(`${header.href}`)}
             >
               {header.header}
